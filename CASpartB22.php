@@ -166,14 +166,17 @@ tr:nth-child(even) {
 
 
        
+        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
 
 
         <div class="input_field">
             <input type="submit" value="Submit" name="submit" class="button" id="submit">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -281,11 +284,15 @@ tr:nth-child(even) {
                         </label>
                   
                         <input type="text" name="S1" required class="form-control" >
+                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit1" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -383,12 +390,15 @@ tr:nth-child(even) {
   
        <label for=""> Total Score</label>
        <input type="text" name="TS1" required class="form-control">
- 
+       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
 <div class="input_field">
             <input type="submit" value="Submit" name="submit2" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
 
  </form>
@@ -468,12 +478,15 @@ tr:nth-child(even) {
                        <input type="text" name="scoreInnovative" required class="form-control">
                        <br>
                        
-                      
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+                 <input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit3" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -545,13 +558,16 @@ tr:nth-child(even) {
                        <label>Score</label>
                        <input type="text" name="scoreCurricula" required class="form-control">
                        <br>
-                       
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>         
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit4" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -620,12 +636,15 @@ tr:nth-child(even) {
                        <input type="text" name="scoreMoocs" required class="form-control">
                        <br>
                        
-                      
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+                 <input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit5" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -708,11 +727,15 @@ tr:nth-child(even) {
                        <br>
                        
                       
-                        <div class="input_field">
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
+                       <div class="input_field">
             <input type="submit" value="Submit" name="submit6" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -785,12 +808,15 @@ tr:nth-child(even) {
                        <input type="text" name="scoreContent" required class="form-control">
                        <br>
                        
-                      
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+                 <input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit7" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -862,13 +888,16 @@ tr:nth-child(even) {
                        <label>Score</label>
                        <input type="text" name="scoreCorrdinator" required class="form-control">
                        <br>
-                       
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit8" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -937,13 +966,16 @@ tr:nth-child(even) {
                        <label>Score</label>
                        <input type="text" name="scoreE-Content" required class="form-control">
                        <br>
-                       
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit9" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -1010,13 +1042,16 @@ tr:nth-child(even) {
                        <label>Score</label>
                        <input type="text" name="scoreE-ContentPerModule" required class="form-control">
                        <br>
-                       
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit10" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -1087,12 +1122,15 @@ tr:nth-child(even) {
                        <input type="text" name="scoreEditor" required class="form-control">
                        <br>
                        
-                      
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+                 <input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit11" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -1173,13 +1211,16 @@ tr:nth-child(even) {
                        <label>Score</label>
                        <input type="text" name="scoreEditorContributor" required class="form-control">
                        <br>
-                       
+                       <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div>      
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit12" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
