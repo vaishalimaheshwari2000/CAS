@@ -147,7 +147,9 @@ tr:nth-child(even) {
         <br>
         <label for="">No. of co-authors</label>
         <br>
-        <input type="text" name="coauthors" class="form-control" id="noAuth">
+        <label for="">Name of authors(Main Author followed by co-authors' name)<label>
+        <br>
+        <input type="text" name="namecoauthors" class="form-control" id="noAuth">
         <br>
         <label for="">Whether you are the main author</label>
         <br>
@@ -189,6 +191,7 @@ tr:nth-child(even) {
             <th>ISSN / ISBN No.</th>
             <th>Whether Peer Reviewed Impact Factor, if any</th>
             <th>No. of co-authors</th>
+            <th>Name of Authors(main author followed by coauthor)</th>
             <th>Whether you are the main author</th>
             <th>Year </th>
             <th>Score </th>
@@ -217,6 +220,7 @@ tr:nth-child(even) {
             <td><?php echo $showData ['ISSN / ISBN No. of Publication']; ?></td>
             <td><?php echo $showData ['Whether Peer Reviewed Impact Factor, if any']; ?></td>
             <td><?php echo $showData ['No. of co-authors']; ?></td>
+            <td><?php echo $showData ['namecoauthors']; ?></td>
             <td><?php echo $showData ['Whether you are the main author']; ?></td>
             <td><?php echo $showData ['Year']; ?></td>
             <td><?php echo $showData ['Score']; ?></td>

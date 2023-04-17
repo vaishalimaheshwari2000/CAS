@@ -59,6 +59,43 @@ tr:nth-child(even) {
         margin-top:10%;
     } */
 
+
+    .popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 50%;
+  border-radius:5px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 </style>
 <link rel="stylesheet" href="css/bootstrap.css">
     <script src="script.js"> </script>
@@ -873,7 +910,23 @@ tr:nth-child(even) {
 
 
 
+ 
+    <div class="input_field">
+    <input type="submit" value="Print" name="print" class="button"  id="print" onclick="openPopup()"></input>
+        <div id="myPopup" class="popup">
+           <div class="popup-content">
+             <span class="close" onclick="closePopup()">&times;</span>
+                   <h3>Noted:</h3>
+                  <p>Please press <b>ctrl + p </b></p>
+                  <p>Then,click on <b>Save button</b> which is present on the lower side corner in this popup window , then download/print  </p>
+  </div>
+</div>
 
+            <!-- <input type="submit" value="Print" name="print" class="button" onclick='print()' id="print"> -->
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+                Export
+            </a> -->
+        </div>
 
 
 
@@ -881,5 +934,23 @@ tr:nth-child(even) {
 
 
    </div>
- </body>
+
+<script>
+
+
+
+function openPopup() {
+  document.getElementById("myPopup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("myPopup").style.display = "none";
+  document.getElementById("print").style.display = "none";
+}
+
+
+
+</script>
+
+</body>
 </html>

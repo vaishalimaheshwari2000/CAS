@@ -1,5 +1,5 @@
 <?php
-         session_start();
+        //  session_start();
         include("connection.php");
         if(isset($_POST['submit9'])){
          

@@ -49,20 +49,14 @@ tr:nth-child(even) {
         margin-left:40%;
     }
     #bitexInfo{
-        /* margin-left:7%; */
-        /* width:80%; */
-        /* padding: 7.1px; */
-        /* border: none; */
-        border-radius:3px;
-        /* background-color: rgb(124, 223, 236); */
-        /* margin-left:40%; */
+      border-radius:3px;
     }
     .bib{
         /* margin-left:7%; */
     }
     input[type='text']{
         width:80%;
-    }
+    } 
     .full{
         margin-left:10%;
     }
@@ -78,16 +72,16 @@ tr:nth-child(even) {
                                        <label><h2 id='head'>PROFILE PAGE</h2></label><br><b><hr></b>
 <!-- <form method="post" id='full'> -->
  <br>
-     <form action='profile_connect.php' method="post" class='full'>
+
+
+<!--------------------------------------------------------------------- start column--------------------------------------------------------------------------------- -->
+        <form action='profileconnect.php' method="post" class='full'  enctype="multipart/form-data">
                 <br>
-                <!-- <label for="#"><h2>E-Content</h2></label><br><br> -->
-               <!-- <label for="#"><b>3(d).4 Contribution to development of e-content module in complete course/ paper/ e-book (at least one quadrant)</b></label><br> -->
-                <!-- <table frame="box">
-                    <tr> -->
+                
                     <label><h2>Personal Data</h2></label><br>
                         <br>
                        <label>Image</label><br>
-                       <input type="file" name="user_image" required class="form-control">
+                       <input type="file" name="userImage" required class="form-control">
                        <br>
                        <br>
                        <label>Name</label><br>
@@ -102,8 +96,28 @@ tr:nth-child(even) {
                        <input type="text" name="Specialization" required class="form-control">
                        <br>
                        <br>
+                       <label>Qualification</label><br>
+                       <input type="text" name="qualification" required class="form-control">
+                       <br>
+                       <br>
+                       <label>Department</label><br>
+                       <input type="text" name="department" required class="form-control">
+                       <br>
+                       <br>
+                       <label>Faculty</label><br>
+                       <input type="text" name="faculty" required class="form-control">
+                       <br>
+                       <br>
+                       <label>Address of College</label><br>
+                       <input type="text" name="address" required class="form-control">
+                       <br>
+                       <br>
                        <label>Email</label><br>
                        <input type="text" name="mail" required class="form-control">
+                       <br>
+                       <br>
+                       <label>Phone</label><br>
+                       <input type="text" name="phone" required class="form-control">
                        <br>
                        <br>
                       
@@ -115,43 +129,87 @@ tr:nth-child(even) {
                             <input type="submit" value="Submit" name="submit10" class="button" id="submit10">
            
                                    </div>
-                 </form>
-                       <form action="profileArea.php" class='full'>
+           </form>
+<!----------------------------------------------------------- 1st column---------------------------------------------------------------------- -->
 
-                       <label><h2>Area(s)Research</h2></label><br>
-                       <input type="text" name="researcgASrea" required class="form-control">
-                       <br>
-                           <div class="input_field">
-                            <input type="submit" value="Submit" name="submit5" class="button" id="submit5">
-           
-                                   </div>
-                        </form>
-                       <form action="profile_interest.php" class='full'>
 
-                       <label><h2>Research Interests</h2></label><br>
-                       <input type="text" name="interests" required class="form-control">
+
+
+
+
+
+
+<!-------------------------------------------------------Area(s)Research---------------------------------------------------------------------- -->
+<form action="profileArea.php" method="post" class='full' >
+  
+  <label><h2>Area(s)Research</h2></label><br>
+  <input type="text" name="researcgASrea" required class="form-control">
+  <br>
+  <div class="input_field">
+    <input type="submit" value="Submit" name="submit5" class="button" id="submit5">
+    
+  </div>
+</form>
+
+
+
+
+<!-----------------------------------------------Research Interests---------------------------------------------------------------------- -->
+<form action="profileinterest.php" method ="post" class='full' >
+  
+      <label><h2>Research Interests</h2></label><br>
+              <input type="text" name="interests" required class="form-control">
                        <br>
                            <div class="input_field">
                             <input type="submit" value="Submit" name="submit9" class="button" id="submit9">
            
                                    </div>
-                        </form>
-                       <form action="profileHonors.php" class='full'>
+</form>
 
-                           <label><h2>Honors and Recoginitions</h2></label><br>  
-                           <input type="text" name="honors" required class="form-control">
-                           <br>
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------- HONORS ---------------------------------------------------------------------- -->
+
+
+<form action="profileHonors.php" method="post" class='full'  enctype="multipart/form-data">
+                                    
+                                    <label><h2>Honors and Recoginitions</h2></label><br>  
+                                    <input type="text" name="honors" required class="form-control">
+                                    <br>
                            <div class="input_field">
-                            <input type="submit" value="Submit" name="submit0" class="button" id="submit0">
-           
-                                   </div>
-                        </form>
-
+                             <input type="submit" value="Submit" name="submit0" class="button" id="submit0">
+                             
+                            </div>
+</form>
+                          
             </a>
-        </div>
+        <!-- </div> -->
         <br>
-    
-    <form action="profile-journal.php" method="post" class='full'>
+     
+        
+
+
+
+
+
+
+
+
+  <!----------------------------------------------------------- journal---------------------------------------------------------------------- -->
+
+
+
+
+
+  <form action="profilejournal.php" method="post" class='full'  enctype="multipart/form-data">
           <br>
      
                 <br>
@@ -162,7 +220,7 @@ tr:nth-child(even) {
                        <label>BibTex(Source File): </label><br>
                        <input type="text" id="bitexInfo" class="form-control"  onchange="convert()">
                        <br>
-                       <!-- <input type="text" name="author" required class="form-control"> -->
+
                        <br>
                        <label>Author(s)</label><br>
                        <!-- <br> -->
@@ -201,7 +259,7 @@ tr:nth-child(even) {
            
        </div>
     </form>
-<!-- </form> -->
+<!------------------------------------------------------------- columns completed----------------------------------------------------------------------------------- -->
 
 <script>
 
