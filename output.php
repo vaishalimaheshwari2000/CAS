@@ -205,7 +205,7 @@ tr:nth-child(even) {
      <br>
      <br>
      <!-- <label for="#"><b>PART A: GENERAL INFORMATION AND ACADEMIC BACKGROUND</b></label><br> -->
-     <label for="#"> <b>1(b)	Research Degree(s)</b></label>
+     <label for="#"> <b>1(b) Research Degree(s)</b></label>
 <br>
 
 
@@ -254,7 +254,7 @@ tr:nth-child(even) {
      
      <br>
      <!-- <label for="#"><b>PART A: GENERAL INFORMATION AND ACADEMIC BACKGROUND</b></label><br> -->
-     <label for="#"> <b>1(c)	Appointment held prior to joining this Institution</b></label>
+     <label for="#"> <b>1(c) Appointment held prior to joining this Institution</b></label>
                 
          <br>
 
@@ -352,7 +352,181 @@ tr:nth-child(even) {
         <h5 style="text-decoration:underline; text-align: center;"> Information for the Year <input type="text"
                 maxlength="4" style="width: 80px;">to<input type="text" maxlength="4"
                 style="width:80px; text-decoration: underline;">.</h5><br><br>
+        
 
+<!----------------------------------------------------------- CATEGORY I -------------------------------------------->
+
+  <!---------------------------------------------------------- TABLE 1 ----------------------------------------------------------------------------------->
+
+
+                <b><label for=""; style="text-decoration:underline;" >Category I: Teaching, Learning and Evaluation Related Activates</label><br>
+<label for="">1A:	Teaching: (Classes taught include sessions, tutorials, lab., and other teaching related activities)</label>
+    <label for="">(Regularity and punctuality in classes, remedial teaching, clarifying doubts, counseling, mentoring, additional teaching etc.) </label>
+            </b>
+<br>
+
+
+
+<table  class="category">
+        <thead>
+            <th>Course/Paper</th>
+            <th>No. of classes Assigned</th>
+            <th>No. of Classes Taught</th>
+            <th>Percentage of Classes Taught</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql3 = "SELECT * FROM `casparta1(a)`";
+            $dataArray1 = mysqli_query($conn, $sql3);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+
+            <td><?php echo $showData1 ['course']?></td>
+            <td><?php echo $showData1 ['classes']?></td>
+            <td><?php echo $showData1 ['classestaught']?></td>
+            <td><?php echo $showData1 ['perecntageClasses']?></td>
+          
+        </tr>
+        <?php }?>
+    </table> 
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------- TABLE 2 (FOR ODD)---------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+    <br><br><label for=""><b>1B: Examination, Evaluation Activities, Administrative Support and Participation in Students’ Co-curricular & Extra-curricular Activities</label>
+            </b>
+<br>
+<label for=""><b>ODD Semester</b></label><br>
+<table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryoddpartya`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity']?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table> 
+
+
+
+
+
+
+
+
+
+
+    <!--------------------------------------------------------------------------- TABLE 2 (FOR EVEN)---------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+    <label for=""><b>EVEN Semester</b></label><br>
+
+    <table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryaparta`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity'];?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
 
     <table>
         <br><br><br>

@@ -15,6 +15,9 @@ table {
   width: 100%;
 
 }
+#category input{
+    width: 80%;
+}
 
 td, th {
   border: 1px solid #dddddd;
@@ -46,18 +49,31 @@ tr:nth-child(even) {
         margin-left:40%;
     }
     .bitexInfo{
-        /* margin-left:7%; */
-        width:80%;
-        /* padding: 7.1px; */
-        /* border: none; */
+        width:100%;
+       
         border-radius:3px;
-        /* background-color: rgb(124, 223, 236); */
-        /* margin-left:40%; */
     }
     .bib{
-        /* margin-left:7%; */
+       
         font-weight:normal;
     }
+    .category{
+        margin-left:6.5%;
+    }
+
+    .activity{
+        width:40%;
+        padding:10px;
+        
+    }
+    .activity td{
+        margin-right:40%;
+    }
+
+    #roleacti{
+        width:40%;
+    }
+   
 </style>
 <link rel="stylesheet" href="css/bootstrap.css">
     <script src="script.js"> </script>
@@ -107,8 +123,337 @@ tr:nth-child(even) {
         <h5 style="text-decoration:underline; text-align: center;"> Information for the Year <input type="text"
                 maxlength="4" style="width: 80px;">to<input type="text" maxlength="4"
                 style="width:80px; text-decoration: underline;">.</h5><br><br>
-<!-- <form > -->
+
     
+
+
+
+<form action="caspart1(a).php" method='post'>
+<div class="category">
+
+<b><label for=""; style="text-decoration:underline;" >Category I: Teaching, Learning and Evaluation Related Activates</label></b><br>
+<label for="">1A:	Teaching: (Classes taught include sessions, tutorials, lab., and other teaching related activities)</label>
+    <label for="">(Regularity and punctuality in classes, remedial teaching, clarifying doubts, counseling, mentoring, additional teaching etc.) </label>
+
+<br>
+<label for="">Course/Paper</label><br>
+<input type="text" name='course'  class="form-control"><br>
+<label for="">No. of classes Assigned</label><br>
+<input type="text" name='classes'  class="form-control"><br>
+<label for="">No. of Classes Taught</label><br>
+<input type="text" name='classestaught'  class="form-control"><br>
+<label for="">Percentage of Classes Taught</label><br>
+<input type="text" name='perecntageClasses'  class="form-control"><br>
+
+
+<div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
+
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+</div> 
+</div>
+
+<div class="input_field">
+            <input type="submit" value="Submit" name="submitA" class="button" id="submitA">
+         
+        </div>
+        <br>
+
+
+</form>
+
+
+
+
+
+<table  class="category">
+        <thead>
+            <th>Course/Paper</th>
+            <th>No. of classes Assigned</th>
+            <th>No. of Classes Taught</th>
+            <th>Percentage of Classes Taught</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql3 = "SELECT * FROM `casparta1(a)`";
+            $dataArray1 = mysqli_query($conn, $sql3);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+
+            <td><?php echo $showData1 ['course']?></td>
+            <td><?php echo $showData1 ['classes']?></td>
+            <td><?php echo $showData1 ['classestaught']?></td>
+            <td><?php echo $showData1 ['perecntageClasses']?></td>
+          
+        </tr>
+        <?php }?>
+    </table> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------------- FOR ODD--------------------------------------------------------------------------------- -->
+
+
+
+<form action="caspart1oddA(b).php" method='post'>
+
+<div class="category">
+<br><br>
+    <label for="">1B: Examination, Evaluation Activities, Administrative Support and Participation in Students’ Co-curricular & Extra-curricular Activities</label>
+
+    <br>
+<label for=""><b>ODD Semester</b></label><br>
+<label for="">Activities</label><br>
+<select name="activity" class="form-control">
+    <option value="">Select</option>
+    <option value="Administrative responsibilities such as Head/ Chairperson /Dean/ Director/ Coordinator, Warden etc.">Administrative responsibilities such as Head/ Chairperson /Dean/ Director/ Coordinator, Warden etc.</option>
+    <option value="Examination and evaluation duties assigned by the University or attending the examination paper evaluation.">Examination and evaluation duties assigned by the University or attending the examination paper evaluation.</option>
+    <option value="Student related co-curricular, extension and field-based activities such as students’ clubs, career counseling, study visits, students’ seminars and other events, cultural, sports, NCC, NSS and community services.">Student related co-curricular, extension and field-based activities such as students’ clubs, career counseling, study visits, students’ seminars and other events, cultural, sports, NCC, NSS and community services.</option>
+    <option value="Organizing seminars/conferences/workshops, other universities activities.">Organizing seminars/conferences/workshops, other universities activities.</option>
+    <option value="Evidence of actively involved in guiding Ph.D. students.">Evidence of actively involved in guiding Ph.D. students.</option>
+    <option value="Conducting minor or major research project sponsored by national or international agencies.">Conducting minor or major research project sponsored by national or international agencies.</option>
+    <option value="At least one single or joint publication in peer reviewed or UGC list of Journals.">At least one single or joint publication in peer reviewed or UGC list of Journals.</option>
+    <option value="Presentation of papers and chairing of sessions.">Presentation of papers and chairing of sessions.</option>
+    <option value="Guiding and carrying out research projects and publishing the research output in national and international journals.">Guiding and carrying out research projects and publishing the research output in national and international journals.</option>
+</select><br>
+<label for="">Roles</label><br>
+<input type="text" name='role'  class="form-control"><br>
+
+<div class="input_field">
+            <input type="submit" value="Submit" name="submitodd" class="button" id="submitodd">
+            
+        </div>
+</div>
+</form>
+
+
+
+
+          
+<table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryoddpartya`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity']?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------ FOR EVEN--------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+<form action="caspart1a(b).php" method='post'>
+
+<div class="category">
+<br><br>
+    
+    <br>
+<label for=""><b>EVEN Semester</b></label><br>
+
+<?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql3 = "SELECT * FROM `categoryoddpartya`";
+            $dataArray1 = mysqli_query($conn, $sql3);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+
+<label for="">Activities</label><br>
+<select name="activity[]" class="form-control">
+
+  
+    <option value="<?php echo $showData1 ['Activity'];?>"><?php echo $showData1 ['Activity'];?></option>
+    <option value="Administrative responsibilities such as Head/ Chairperson /Dean/ Director/ Coordinator, Warden etc.">Administrative responsibilities such as Head/ Chairperson /Dean/ Director/ Coordinator, Warden etc.</option>
+    <option value="Examination and evaluation duties assigned by the University or attending the examination paper evaluation.">Examination and evaluation duties assigned by the University or attending the examination paper evaluation.</option>
+    <option value="Student related co-curricular, extension and field-based activities such as students’ clubs, career counseling, study visits, students’ seminars and other events, cultural, sports, NCC, NSS and community services.">Student related co-curricular, extension and field-based activities such as students’ clubs, career counseling, study visits, students’ seminars and other events, cultural, sports, NCC, NSS and community services.</option>
+    <option value="Organizing seminars/conferences/workshops, other universities activities.">Organizing seminars/conferences/workshops, other universities activities.</option>
+    <option value="Evidence of actively involved in guiding Ph.D. students.">Evidence of actively involved in guiding Ph.D. students.</option>
+    <option value="Conducting minor or major research project sponsored by national or international agencies.">Conducting minor or major research project sponsored by national or international agencies.</option>
+    <option value="At least one single or joint publication in peer reviewed or UGC list of Journals.">At least one single or joint publication in peer reviewed or UGC list of Journals.</option>
+    <option value="Presentation of papers and chairing of sessions.">Presentation of papers and chairing of sessions.</option>
+    <option value="Guiding and carrying out research projects and publishing the research output in national and international journals.">Guiding and carrying out research projects and publishing the research output in national and international journals.</option>
+</select><br>
+
+             <label for="">Roles</label><br>
+             <input type="text" name='role[]' value="<?php echo $showData1 ['Activity & Role'];?>" class="form-control"><br>
+          
+      
+        <?php }?>
+
+<div class="input_field">
+            <input type="submit" value="Submit" name="submiteven" class="button" id="submiteven">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+                Export
+            </a> -->
+        </div>
+</div>
+</form>
+
+
+
+
+<table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryaparta`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity'];?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <form action="CASpartB22_submit.php" method="post">
         
         <div style="margin-left: 100px; margin-right: 100px;">
@@ -119,7 +464,7 @@ tr:nth-child(even) {
                     </b> <br>
                     
                     
-                    <label for="">Category II: Research, Publications and Academic Contributions</label>
+                    <!-- <label for="">Category II: Research, Publications and Academic Contributions</label> -->
                     <br>
                     <label for="">1. Research Papers published in Peer Reviewed or UGC listed Journals</label>
                     <br>
