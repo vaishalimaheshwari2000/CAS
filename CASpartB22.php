@@ -59,19 +59,25 @@ tr:nth-child(even) {
     }
     .category{
         margin-left:6.5%;
+        
     }
 
     .activity{
-        width:40%;
+        width:70%;
         padding:10px;
-        
+       
     }
     .activity td{
-        margin-right:40%;
+        /* margin-right:40%; */
     }
 
     #roleacti{
         width:40%;
+    }
+
+    .tableCategory{
+        width:70%;
+        margin-left:6.5%;
     }
    
 </style>
@@ -165,7 +171,7 @@ tr:nth-child(even) {
 
 
 
-<table  class="category">
+<table class='tableCategory' >
         <thead>
             <th>Course/Paper</th>
             <th>No. of classes Assigned</th>
@@ -305,7 +311,7 @@ tr:nth-child(even) {
          <div class="activity">
 
              <td class='activity'><?php echo $showData1 ['Activity']?></td>
-             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+             <td class='activity' ><?php echo $showData1 ['Activity & Role']; ?></td>
             </div>
           
         </tr>
@@ -445,6 +451,7 @@ tr:nth-child(even) {
 
 
 
+<!------------------------------------------------------- Table 1(c) For ODD----------------------------------------------------------------------------------------- -->
 
 
 
@@ -454,7 +461,220 @@ tr:nth-child(even) {
 
 
 
-    <form action="CASpartB22_submit.php" method="post">
+
+
+
+
+
+
+
+
+<form action="categoryaparta1odd(c).php" method='post'>
+
+<div class="category">
+<br><br>
+    <label for="">1C: Personal Development Related to Teaching and Research Activities: </label>
+
+    <br>
+<label for=""><b>ODD Semester</b></label><br>
+<label for="">Activities</label><br>
+<select name="activity">
+    <option value="">Select</option>
+  <option value="Orientation/Refresher/Research Methodology course">Orientation/Refresher/Research Methodology course</option>
+  <option value="Development of e-contents and MOOCs">Development of e-contents and MOOCs</option>
+  <option value="Workshop">Workshop</option>
+  <option value="Syllabus up-gradation workshop">Syllabus up-gradation workshop</option>
+  <option value="Training Teaching-Learning Evaluation">Training Teaching-Learning Evaluation</option>
+  <option value="Technology Programs">Technology Programs</option>
+  <option value="Faculty Development Programs">Faculty Development Programs</option>
+</select>
+<br><br>
+<label for="">Roles</label><br>
+<input type="text" name='role'  class="form-control"><br>
+
+<div class="input_field">
+            <input type="submit" value="Submit" name="submitpartodd" class="button" id="submitpartodd">
+            
+        </div>
+</div>
+</form>
+
+
+
+
+          
+<table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryaparta1odd(c)`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity']?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table> 
+
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------- for even 1(c)------------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+<form action="categoryaparta1even(c).php" method='post'>
+
+<div class="category">
+<br><br>
+    
+    <br>
+<label for=""><b>EVEN Semester</b></label><br>
+
+<?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql3 = "SELECT * FROM `categoryaparta1odd(c)`";
+            $dataArray1 = mysqli_query($conn, $sql3);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+
+<label for="">Activities</label><br>
+<select name="activity[]" class="form-control">
+
+  
+    <option value="<?php echo $showData1 ['Activity'];?>"><?php echo $showData1 ['Activity'];?></option>
+    <option value="Orientation/Refresher/Research Methodology course">Orientation/Refresher/Research Methodology course</option>
+  <option value="Development of e-contents and MOOCs">Development of e-contents and MOOCs</option>
+  <option value="Workshop">Workshop</option>
+  <option value="Syllabus up-gradation workshop">Syllabus up-gradation workshop</option>
+  <option value="Training Teaching-Learning Evaluation">Training Teaching-Learning Evaluation</option>
+  <option value="Technology Programs">Technology Programs</option>
+  <option value="Faculty Development Programs">Faculty Development Programs</option>
+</select><br>
+
+             <label for="">Roles</label><br>
+             <input type="text" name='role[]' value="<?php echo $showData1 ['Activity & Role'];?>" class="form-control"><br>
+          
+      
+        <?php }?>
+
+<div class="input_field">
+            <input type="submit" value="Submit" name="submitparteven" class="button" id="submitparteven">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+                Export
+            </a> -->
+        </div>
+</div>
+</form>
+
+
+
+
+<table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryaparta1even(c)`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity'];?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+   
+<form action="CASpartB22_submit.php" method="post">
         
         <div style="margin-left: 100px; margin-right: 100px;">
             <div>

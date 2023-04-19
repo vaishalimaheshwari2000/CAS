@@ -472,7 +472,7 @@ tr:nth-child(even) {
 
 
 
-    <label for=""><b>EVEN Semester</b></label><br>
+   <br> <label for=""><b>EVEN Semester</b></label><br>
 
     <table>
         <thead>
@@ -522,12 +522,90 @@ tr:nth-child(even) {
 
 
 
+<!-- -------------------------------------------------------------------------------------------------------- -->
+<br>
+    <label for=""><b>
+        1C: Personal Development Related to Teaching and Research Activities: </label>
+            </b>
+    <br>
+    
+<label for=""><b>ODD Semester</b></label><br>
 
+<table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
 
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryaparta1odd(c)`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
 
-
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
                  
+        ?>
 
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity']?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table> 
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+              <br><label for=""><b>EVEN semester</b></label>   
+
+              <table>
+        <thead>
+            <th>Activities</th>
+            <th>Role</th>
+           
+        </thead>
+
+        <?php 
+            include("connection.php");
+            $data_array1 = array();
+            $sql = "SELECT * FROM `categoryaparta1even(c)`";
+            $dataArray1 = mysqli_query($conn, $sql);
+            mysqli_close($conn);
+
+            
+            while($rows = mysqli_fetch_assoc($dataArray1)){ 
+                $data_array1[] = $rows; 
+            }
+                             
+            foreach($data_array1 as $showData1){ 
+                 
+        ?>
+
+        <tr>
+         <div class="activity">
+
+             <td class='activity'><?php echo $showData1 ['Activity'];?></td>
+             <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+            </div>
+          
+        </tr>
+        <?php }?>
+    </table>
+
+
+
+
+   
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
     <table>
         <br><br><br>
         <label for=""><b>Category II: Research, Publications and Academic Contributions</label>
@@ -1096,10 +1174,7 @@ tr:nth-child(even) {
   </div>
 </div>
 
-            <!-- <input type="submit" value="Print" name="print" class="button" onclick='print()' id="print"> -->
-             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
-                Export
-            </a> -->
+            
         </div>
 
 
