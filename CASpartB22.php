@@ -580,8 +580,8 @@ tr:nth-child(even) {
 <select name="activity[]" class="form-control">
 
   
-    <option value="<?php echo $showData1 ['Activity'];?>"><?php echo $showData1 ['Activity'];?></option>
-    <option value="Orientation/Refresher/Research Methodology course">Orientation/Refresher/Research Methodology course</option>
+  <option value="<?php echo $showData1 ['Activity'];?>"><?php echo $showData1 ['Activity'];?></option>
+  <option value="Orientation/Refresher/Research Methodology course">Orientation/Refresher/Research Methodology course</option>
   <option value="Development of e-contents and MOOCs">Development of e-contents and MOOCs</option>
   <option value="Workshop">Workshop</option>
   <option value="Syllabus up-gradation workshop">Syllabus up-gradation workshop</option>
