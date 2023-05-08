@@ -62,7 +62,12 @@ tr:nth-child(even) {
     #part_A{
         margin-top:6%;
     }
-
+    
+    .delete{
+        display: flex;
+        padding:5px;
+       margin: 5px;
+}
 </style>
 <link rel="stylesheet" href="css/bootstrap.css">
     <script src="script.js"> </script>
@@ -269,9 +274,9 @@ tr:nth-child(even) {
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit8" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -288,6 +293,7 @@ tr:nth-child(even) {
             <th>Marks Obtained</th>
             <th>Division/ Grade</th>
             <th>Subject</th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -314,6 +320,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1['marks']?></td>
             <td><?php echo $showData1['division']?></td>
             <td><?php echo $showData1['subject']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="delete3.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -348,9 +365,9 @@ tr:nth-child(even) {
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit6" class="button" id="submit2">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -364,6 +381,7 @@ tr:nth-child(even) {
             <th>Title</th>
             <th>Date of Reward</th>
             <th>University</th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -388,6 +406,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['title']; ?></td>
             <td><?php echo $showData1 ['date']?></td>
             <td><?php echo $showData1 ['university']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="delete2.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -429,9 +458,9 @@ tr:nth-child(even) {
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit7" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -447,6 +476,7 @@ tr:nth-child(even) {
             <th>Date of Leaving</th>
             <th>Salary with Grades</th>
             <th>Reason of leaving</th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -473,6 +503,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Date of Leaving']?></td>
             <td><?php echo $showData1 ['Salary with Grades']?></td>
             <td><?php echo $showData1 ['Reason of leaving']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="delete1.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -510,9 +551,9 @@ tr:nth-child(even) {
                       
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit7" class="button" id="submit1">
-             <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
+             <!-- <a href="#" class="btn bth-primary" style="background-color: rgb(124, 223, 236);">
                 Export
-            </a>
+            </a> -->
         </div>
         <br>
     </form>
@@ -527,6 +568,7 @@ tr:nth-child(even) {
             <th>Joining from</th>
             <th>Joining to</th>
             <th>Grade/Level</th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -552,6 +594,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Joining from']?></td>
             <td><?php echo $showData1 ['Joining to']?></td>
             <td><?php echo $showData1 ['Grade/Level']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="delete.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 

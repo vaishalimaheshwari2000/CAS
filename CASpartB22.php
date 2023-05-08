@@ -133,7 +133,7 @@ tr:nth-child(even) {
     
 
 
-
+<form >
 <form action="caspart1(a).php" method='post'>
 <div class="category">
 
@@ -177,7 +177,7 @@ tr:nth-child(even) {
             <th>No. of classes Assigned</th>
             <th>No. of Classes Taught</th>
             <th>Percentage of Classes Taught</th>
-           
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -202,7 +202,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['classes']?></td>
             <td><?php echo $showData1 ['classestaught']?></td>
             <td><?php echo $showData1 ['perecntageClasses']?></td>
-          
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB18.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -288,6 +298,7 @@ tr:nth-child(even) {
         <thead>
             <th>Activities</th>
             <th>Role</th>
+            <th>Delete</th>
            
         </thead>
 
@@ -312,6 +323,17 @@ tr:nth-child(even) {
 
              <td class='activity'><?php echo $showData1 ['Activity']?></td>
              <td class='activity' ><?php echo $showData1 ['Activity & Role']; ?></td>
+             <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB17.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
             </div>
           
         </tr>
@@ -412,7 +434,7 @@ tr:nth-child(even) {
         <thead>
             <th>Activities</th>
             <th>Role</th>
-           
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -436,6 +458,17 @@ tr:nth-child(even) {
 
              <td class='activity'><?php echo $showData1 ['Activity'];?></td>
              <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+             <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB16.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
             </div>
           
         </tr>
@@ -507,7 +540,7 @@ tr:nth-child(even) {
         <thead>
             <th>Activities</th>
             <th>Role</th>
-           
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -531,6 +564,17 @@ tr:nth-child(even) {
 
              <td class='activity'><?php echo $showData1 ['Activity']?></td>
              <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+             <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB15.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
             </div>
           
         </tr>
@@ -612,7 +656,7 @@ tr:nth-child(even) {
         <thead>
             <th>Activities</th>
             <th>Role</th>
-           
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -636,6 +680,17 @@ tr:nth-child(even) {
 
              <td class='activity'><?php echo $showData1 ['Activity'];?></td>
              <td id='roleacti'><?php echo $showData1 ['Activity & Role']; ?></td>
+             <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB14.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
             </div>
           
         </tr>
@@ -767,6 +822,7 @@ tr:nth-child(even) {
             <th>Whether you are the main author</th>
             <th>Year </th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -796,6 +852,17 @@ tr:nth-child(even) {
             <td><?php echo $showData ['Whether you are the main author']; ?></td>
             <td><?php echo $showData ['Year']; ?></td>
             <td><?php echo $showData ['Score']; ?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB13.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table>
@@ -858,7 +925,7 @@ tr:nth-child(even) {
                         <input type="text" name="S1" required class="form-control" >
                         <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit1" class="button" id="submit1">
@@ -886,6 +953,7 @@ tr:nth-child(even) {
             <th>Are you Main author ?</th>
             <th>National / International</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -916,6 +984,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Are you Main author ?']?></td>
             <td><?php echo $showData1 ['National / International']?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB12.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table>       
@@ -967,7 +1046,7 @@ tr:nth-child(even) {
        <input type="text" name="TS1" required class="form-control">
        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
 <div class="input_field">
             <input type="submit" value="Submit" name="submit2" class="button" id="submit1">
@@ -987,6 +1066,7 @@ tr:nth-child(even) {
             <th>ISSN / ISBN No.</th>
             <th>National / International</th>
             <th>Total Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1014,6 +1094,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['ISSN/ ISBN No.']?></td>
             <td><?php echo $showData1 ['National / International']?></td>
             <td><?php echo $showData1 ['Total Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB11.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1077,6 +1168,7 @@ tr:nth-child(even) {
             <th>Publication_Details</th>
             <th>Number of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1100,6 +1192,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publication_Details']?></td>
             <td><?php echo $showData1 ['Number of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+             <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB10.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1141,7 +1244,7 @@ tr:nth-child(even) {
                        <br>
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>         
                       
                         <div class="input_field">
@@ -1161,6 +1264,7 @@ tr:nth-child(even) {
             <th>Publication_Details</th>
             <th>Number of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1184,6 +1288,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications_Details']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB9.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1240,6 +1355,7 @@ tr:nth-child(even) {
             <th>Publication_Details</th>
             <th>Number of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1263,6 +1379,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications_Details']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB8.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1315,7 +1442,7 @@ tr:nth-child(even) {
                       
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                        <div class="input_field">
             <input type="submit" value="Submit" name="submit6" class="button" id="submit1">
@@ -1334,6 +1461,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1357,6 +1485,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB7.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1398,7 +1537,7 @@ tr:nth-child(even) {
                        
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-                 <input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+                 <input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                         <div class="input_field">
             <input type="submit" value="Submit" name="submit7" class="button" id="submit1">
@@ -1419,6 +1558,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1442,6 +1582,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB6.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1482,7 +1633,7 @@ tr:nth-child(even) {
                        <br>
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                       
                         <div class="input_field">
@@ -1504,6 +1655,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1527,6 +1679,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB5.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1567,7 +1730,7 @@ tr:nth-child(even) {
                        <br>
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                       
                         <div class="input_field">
@@ -1589,6 +1752,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1612,6 +1776,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB4.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1658,7 +1833,7 @@ tr:nth-child(even) {
                        <br>
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                       
                         <div class="input_field">
@@ -1680,6 +1855,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1703,6 +1879,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB3.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1766,6 +1953,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1789,6 +1977,17 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB2.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
@@ -1841,7 +2040,7 @@ tr:nth-child(even) {
                        <br>
                        <div> <label for="formFileMultiple" style="width: 240px; hight:70px;"  class="form-label">Attach Evidences</label>
 
-<input required style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
+<input style="width: 240px; text-align: center;" class="form-control" type="file" id="formFileMultiple" multiple>
 </div>      
                       
                         <div class="input_field">
@@ -1863,6 +2062,7 @@ tr:nth-child(even) {
             <th>Publications</th>
             <th>No of Courses</th>
             <th>Score </th>
+            <th>Delete</th>
         </thead>
 
         <?php 
@@ -1886,19 +2086,30 @@ tr:nth-child(even) {
             <td><?php echo $showData1 ['Publications']?></td>
             <td><?php echo $showData1 ['No of Courses']; ?></td>
             <td><?php echo $showData1 ['Score']?></td>
+            <td>
+                <div class="delete">
+
+                 
+                <button class="delete"><a href="deleteB1.php?deleteid='<?php echo $showData1 ['id']?>'">Delete</a></button>
+            <!-- </form> -->
+            <!-- <form action="delete_post.php" method="post">
+                <input class='delete' type="submit" value="Edit" >
+            </form> -->
+        </div>
+        </td>
         </tr>
         <?php }?>
     </table> 
 
 
 
-    <!-- </form> -->
+    </form>
 
 <script>
 
 
 function convert() {
-let citation = document.querySelectorAll('.bitexInfo').value;
+let citation = document.querySelector('.bitexInfo').value;
 const regex = /([^\s]+)\s*=\s*\{([^}]*)\}/g;
 const matches = citation.matchAll(regex);
 
