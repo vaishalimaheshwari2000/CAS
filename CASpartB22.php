@@ -133,7 +133,9 @@ tr:nth-child(even) {
     
 
 
-<form >
+<!-- <form > -->
+
+
 <form action="caspart1(a).php" method='post'>
 <div class="category">
 
@@ -2103,7 +2105,7 @@ tr:nth-child(even) {
 
 
 
-    </form>
+    <!-- </form> -->
 
 <script>
 

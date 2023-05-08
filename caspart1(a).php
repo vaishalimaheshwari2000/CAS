@@ -14,6 +14,6 @@
 
             $data = mysqli_query($conn, $sql);
             mysqli_close($conn);
-            header("Location: CASpartA(new).php");
+            header("Location: CASpartB22.php");
         }
     ?> 
