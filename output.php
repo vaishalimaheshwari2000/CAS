@@ -221,7 +221,7 @@ tr:nth-child(even) {
         <?php 
             include("connection.php");
             $data_array1 = array();
-            $sql = "SELECT * FROM `research_degree( part_a)`";
+            $sql = "SELECT * FROM `researchdegree`";
             $dataArray1 = mysqli_query($conn, $sql);
             mysqli_close($conn);
 
@@ -236,9 +236,9 @@ tr:nth-child(even) {
 
         <tr>
 
-            <td><?php echo $showData1 ['Degree']?></td>
-            <td><?php echo $showData1 ['Title']; ?></td>
-            <td><?php echo $showData1 ['Date of Reward']?></td>
+            <td><?php echo $showData1 ['degree']?></td>
+            <td><?php echo $showData1 ['title']; ?></td>
+            <td><?php echo $showData1 ['date']?></td>
             <td><?php echo $showData1 ['university']?></td>
         </tr>
         <?php }?>
