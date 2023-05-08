@@ -307,9 +307,9 @@ tr:nth-child(even) {
             while($rows = mysqli_fetch_assoc($dataArray1)){ 
                 $data_array1[] = $rows; 
             }
-              echo"text1";               
+                        
             foreach($data_array1 as $showData1){ 
-                echo"text3"; 
+               
         ?>
 
         <tr>
