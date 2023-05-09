@@ -462,6 +462,47 @@ tr:nth-child(even) {
 
 
 
+
+
+
+
+    
+<p><strong><hr># Involvement in Students Related Activities/ Research Activities:</hr></strong></p>
+<p>a) Administrative responsibilities such as Head/ Chairperson /Dean/ Director/
+Coordinator, Warden etc.</p>
+<p>b) Examination and evaluation duties assigned by the University or attending the
+examination paper evaluation.</p>
+<p>c) Student related co-curricular, extension and field-based activities such as
+students’ clubs, career counseling, study visits, students’ seminars and other
+events, cultural, sports, NCC, NSS and community services.</p>
+<p>d) Organizing seminars/conferences/workshops, other universities activities.</p>
+<p>e) Evidence of actively involved in guiding Ph.D. students.</p>
+<p>f) Conducting minor or major research project sponsored by national or
+international agencies.</p>
+<p>g) At least one single or joint publication in peer reviewed or UGC list of Journals.</p>
+<p>h) Presentation of papers and chairing of sessions</p>
+<p>i) Guiding and carrying out research projects and publishing the research output in
+national and international journals</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--------------------------------------------------------------------------- TABLE 2 (FOR EVEN)---------------------------------------------------------------------------------------------------------------- -->
 
 

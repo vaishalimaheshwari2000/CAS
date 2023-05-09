@@ -68,6 +68,14 @@ tr:nth-child(even) {
         padding:5px;
        margin: 5px;
 }
+#api, #api1{
+    border:none;
+    background-color: transparent;
+    color:black;
+}
+a{
+   color:black !important;
+}
 </style>
 <link rel="stylesheet" href="css/bootstrap.css">
     <script src="script.js"> </script>
@@ -83,7 +91,7 @@ tr:nth-child(even) {
 
 </div>
 
-
+<!-------------------------------------------------------- nav-bar-------------------------------------------------------- -->
 <hr style="border-top: 1mm solid black ;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a href="#" class="navbar-brand"> <img class="svg" src="logo.jpeg" alt="Bootstrap" width="40" height="40"
@@ -104,19 +112,37 @@ tr:nth-child(even) {
                         <a class="nav-link" href="https://www.dei.ac.in/dei/files/IQAC/2022/CAS_GUIDELINES_2018.pdf">CAS
                             GUIDELINES<span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item">
+                    <button class="nav-link" id='api' type="submit"><a href='output.php'>API Form</a></button>
+               
+                        <!-- <a class="nav-link" href="output.php">API Form<span class="sr-only">(current)</span></a> -->
+                    </li>
+                    <li class="nav-item">
+                    <button class="nav-link" id='api1' type="submit"><a href='profile.php'>Profile Info</a></button>
+               
+                        <!-- <a class="nav-link" href="output.php">API Form<span class="sr-only">(current)</span></a> -->
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
 
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="index.html">Log
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Log
                         Out</button>
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
-                        formaction="home.html">Back</button>
+                        formaction="home1.php">Back</button>
                 </form>
             </div>
         </nav>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+       
 
 
-        <h4 style="text-decoration:underline; text-align: center;" id='part_A'>PART A: GENERAL INFORMATION AND ACADEMIC BACKGROUND</h4>
+
+
+
+
+
+<h4 style="text-decoration:underline; text-align: center;" id='part_A'>PART A: GENERAL INFORMATION AND ACADEMIC BACKGROUND</h4>
         <h5 style="text-decoration:underline; text-align: center;"> Information for the Year <input type="text"
                 maxlength="4" style="width: 80px;">to<input type="text" maxlength="4"
                 style="width:80px; text-decoration: underline;">.</h5><br><br>
@@ -129,9 +155,7 @@ tr:nth-child(even) {
  <br>
      
                 <br>
-                <!-- <label for="#"><b>PART A: GENERAL INFORMATION AND ACADEMIC BACKGROUND</b></label><br> -->
-                <!-- <label for="#"> <b>1(a) Academic Qualifications (Matric till post-graduation)</b></label> -->
-                <!-- <table frame="box"> -->
+                
                     <tr>
                         <br>
                        <label>Name(in Block Letters)</label>
@@ -395,7 +419,7 @@ tr:nth-child(even) {
             while($rows = mysqli_fetch_assoc($dataArray1)){ 
                 $data_array1[] = $rows; 
             }
-                             
+                                    
             foreach($data_array1 as $showData1){ 
                  
         ?>

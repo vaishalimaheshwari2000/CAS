@@ -7,35 +7,6 @@
      if($_SERVER["REQUEST_METHOD"]=="POST"){
         $email = $_POST['emailid'];
         $password = $_POST['password'];
-        // $query = "Select * from users where email = '$email' and password='$password'";
-        // echo $query;
-        // echo "<br>";
-        // $result = mysqli_query($conn, $query);
-        // $num = mysqli_num_rows($result);
-      
-        // $display = implode(mysqli_fetch_assoc($result));
-        // echo $display;
-        // if($num==1){
-        //     $login = true;
-        //     $display = implode(mysqli_fetch_assoc($result));
-        //     echo $display;
-        //     echo "<br>";
-        //     echo $email;
-        //     echo "<br>";
-        //     echo $password;
-        //     echo "<br>";
-        // }
-        // else {
-        //     $showError = "Invalid Credentials!";
-        //     $display = implode(mysqli_fetch_assoc($result));
-        //     echo $display;
-        //     echo "<br>";
-        //     echo $email;
-        //     echo "<br>";
-        //     echo $password;
-        //     echo "<br>";
-        // }
-
         $stmt = $conn->prepare("select * from users where email=? and password=?");
 
         $stmt->bind_param("ss",$email,$password);
@@ -46,7 +17,7 @@
             echo "data:  " ;
             echo implode($data);
             if($data["password"] === $password) {
-            echo"successful!";
+                header("Location: home.html");
            
          }
         
@@ -74,6 +45,13 @@
         top:0;
         left:0;
         /* margin-bottom:2%; */
+    }
+    h2{
+        font-size:5rem;
+    }
+     
+    .logSign{
+        display: inline-block;
     }
 
     .btn {
@@ -121,7 +99,22 @@ table{
     padding-left:100px;
 }
 
+.blockquote{
+    text-align : center;
+    font-size:1.5rem;
+    display:flex;
+}
+.dayal{
+    text-align : center;
+    font-size:1.5rem;
+    /* display:flex; */
+    margin:0 auto;
+}
 
+#signUpForm{
+    /* position:relative; */
+    margin-top:30%;
+}
     </style>
 
 
@@ -157,28 +150,28 @@ if($showError){
 
 <body>
 
+<div class="blockquote text-center">
+<div id="logohead">
+        <a href="#" id="logo_head"><img src="dayalbagh-educational-institute-distance-education-logo.png" id='logo'/> </a>
+      
+    </div>
+    <div class="dayal">
 
+        <h3>Dayalbagh Educational Institute</h3>
+        <h4>(Deemed To Be University)</h4>
+        <h4>Dayalbagh, Agra</h4>
+        <h5>Assessment Criteria and Methodology Proforma for Promotion under CAS </h5>
+    </div>
+
+    </div>
+    
+    <hr style="border-top: 1mm solid black ;">
     <table cellspacing="0" width="500px" class="tle" >
 	<tr>
 
-    <div id="logo_head">
-        <a href="#"><img src="dayalbagh-educational-institute-distance-education-logo.png" id='logo'/> </a>
-        <h2>DayalBagh Educational Institute</h2>
-    </div>
-	</tr>
-    <tr>
-		<td colspan="2" align="center" class="journaltitle">SCIENTIFIC DEVELOPMENT AND RESEARCH PUBLICATIONS</br> DEVELOPMENT RESEARCH
-		
-		</br></br>
-		
-		<a href="https://ugcnet.nta.nic.in/"> About UGC </a> 
-		</td>
-	</tr>
     
-     <tr>
-		<td colspan="2" align="center" class="logintitle">Login to Author's Home</td>
 	</tr>
-    <tr>
+   
 		<td colspan="2">
 
 
@@ -187,45 +180,61 @@ if($showError){
 
 
 
+<style>
+    #email, #registrationid{
+        width:500px;
+        height:23px;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+</style>
 
+        <form  action="#" method="post" id='signUpForm'>
+    <span ></span>
+        <div class="mail">
 
-        <form class="form-3" action="#" method="post">
-    <span color="#89CFF0" style="font:Arial, Helvetica, sans-serif; font-size:12px; text-align:center"></span>
+            <p>
+                <label for="login">Email ID</label></br><br>
+                <input type="text" name="emailid" id="email" placeholder="Author's Mail ID"><br><br>
+            </p>
+        </div>
+    <div class="pass">
+
+        <p>
+            <label for="password">Password</label><br><br>
+            <input type="password" name="password" id="registrationid" placeholder="Password"> <br><br>
+        </p>
+    </div>
+    <div class="log">
         
-    <p align="center">
-        <label for="login">Email ID</label></br>
-        <input type="text" name="emailid" id="email" placeholder="Author's Mail ID">
-    </p>
-    <p align="center">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="registrationid" placeholder="Password"> 
-    </p>
-    <p color="#89CFF0" style="margin-left:25px;margin-right:auto;display:block;margin-top:3%;margin-bottom:3%">
-        <input type="submit" name="submit" value="Sign in" id="smt">
+        <p>
+            <div class="logSign">
+       <input  type="submit" name="submit" value="Login" id="smt">
+     
+        <!-- <a href="registration.php"> -->
+    <!-- <form action="registration.php"> -->
+
+        <input type="submit" name="sign" value="Sign Up" formaction='registration.php' id="smt2">
+    <!-- </form> -->
+       
+    </div>
     </p>       
+    </div>
+    
 </form>
-        
+   <style>
+    #smt{
+         width:50px;
+    }
+    #smt2{
+        width:70px;
+        padding:-10px;
+    }
+   </style>     
         </td>
 	</tr>
-    <tr>
-    <td colspan="2">
-    <div align="center">
-        <table class="socialnet">
-        	<tr>
-            <td colspan="5" class="socialnet" align="center">
-            <p>Follow us on Social Networking sites</p>
-            </td>
-            </tr>
-            <tr>
-            <td width="40px"><a href="https://www.facebook.com/Dayalbagh.agra/"><img src="facebook.png"></a></td>
-            <td width="40px"><a href="https://www.linkedin.com/school/dayalbagh-educational-institute/?originalSubdomain=in"><img src="linkedin.png"></a>
-            <td width="40px"><a href="https://twitter.com/deidayalbagh?lang=en"><img src="twitter.png"></a></td>
-            </tr>
-        </table>
-        </div>
-    
-    </td>
-    </tr>
+   
     </table>
     
     

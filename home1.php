@@ -1,3 +1,7 @@
+<?php include("connection.php");  ?>
+
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,9 +38,9 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
          
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="index.html">Log Out</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Back</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="registration.html">Registration</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Log Out</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Back</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="registration.php">Registration</button>
         </form>
       </div>
     </nav>
@@ -48,13 +52,9 @@
           <h5 class="card-title">PART A:
         </h5>
           <h6 class="card-subtitle mb-2 text-muted"> GENERAL INFORMATION AND ACADEMIC BACKGROUND</h6>
-        <?php 
-        include_once('CASconn.php');
-         $username = $_GET['un'];
-
-          ?>
-          <a href="CASpartA.html" class="card-link">Add Details</a>
-          <a href="CASAupdate.php?un=<?= $username ?>" class="card-link">Update Details</a>
+    
+          <a href="CASpartA(new).php" class="card-link">Add Details</a>
+        
         </div>
       </div>
       <br>
@@ -64,19 +64,14 @@
           <h6 class="card-subtitle mb-2 text-muted">ASSESSMENT OF PERFORMANCE</h6>
           <p>Category I:Teaching, Learning and Evaluation Related Activates</p>
           <p>Category II: Research, Publications and Academic Contributions</p>
-          <a href="CASpartB.html" class="card-link">Category I</a>
-          <a href="CASpartB2.html" class="card-link">Category II</a>
+          <a href="CASpartB22.php" class="card-link">Add details</a>
+          <!-- <a href="CASpartB2.html" class="card-link">Category II</a> -->
         </div>
       </div>
      <br>
-     <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">PUBLICATIONS </h5>
-          <h6 class="card-subtitle mb-2 text-muted">Publications and Research Paper</h6>
-          <a href="submitpaperonline.html" class="card-link">Submit Paper</a>
-        </div>
-      </div>
+     
     </div>
 
 </body>
 </html>
+<!-- ?> -->

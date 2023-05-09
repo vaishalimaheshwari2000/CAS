@@ -7,7 +7,7 @@
     
 
 <head>
-    <title>Registation Form // Index</title>
+    <title>Registration Form // Index</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     
 </head>
@@ -45,7 +45,7 @@
         <div class="row col-md-6 col-md-offset-3 ">
             <div class="panel panel-primary">
                 <div class="panel-heading text-center">
-                    <h1>Registation Form</h1>
+                    <h1>Registration Form</h1>
                 </div>
                 <div class="panel-body">
                    
@@ -86,7 +86,7 @@
                         <div id='invalid'></div>
 
                         <div class="input_field">
-                            <input type="submit" value="Register" name="register" class="button" id="register">
+                            <input type="submit" value="Register" name="register" class="button"  formaction='home1.php'id="register">
                         </div>
 
 
@@ -110,28 +110,21 @@
                         $password =  $_POST['password'];
                          $Cpassword = $_POST['cpwd'];
                      
-                        //  $first_name =   mysql_real_escape_string( $_POST['fname']);
-                        //  $last_name =    mysql_real_escape_string( $_POST['lname']);
-                        //  $phone_no =  mysql_real_escape_string($_POST['phone']);
-                        //  $email =  mysql_real_escape_string($_POST['email']);
-                        //  $password =  mysql_real_escape_string($_POST['password']);
-                        //  $Cpassword =  mysql_real_escape_string($_POST['cpwd']);
+                    
                        
                       if(($password==$Cpassword)){
                             echo"Post";
                             echo "<br>";
                             $query = "INSERT INTO `users` (`fname`,`lname`,`contact`,`email`,`password`,`cpassword`) VALUES ('$firstname','$lastname','$phoneno','$email','$password', '$Cpassword')"; 
-                        //    $querryString =  implode($query);
+                      
                             echo $query;
                             $data = mysqli_query($conn,$query);
                             echo "<br>";
-                            // $dataArray =  implode($data);
+                            
                             echo $data;
                        if($data)
                          $showAlert = true;
                        if($showAlert){
-                        // echo" Data Inserted into db";
-                        // echo"post";
                         echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
                               <strong> Successfully Submitted! </strong> 
                               <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -168,55 +161,10 @@ document.querySelector('.input_field').addEventListener('click', (e)=>{
  });
 
 </script>
-<!-- <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="text/javascript">
-$(function(){
-   $('#register').click(function(e){
+
    
    
-    var valid = ths.form.checkValidity();
-
-    if(valid){
-        const fname =     $('#firstname').val();
-        const lname =$('#lastname').val();
-        const contact =$('#number').val();
-        const email =$('#email').val();
-        const password =$('#password').val();
-        const cpassword = $('#cpwd').val();
-       
-        e.preventDefault();
-
-        $.ajax({
-            type: 'POST', -->
-            <!-- // url: 'process.php', 
-            // data : {fname: fname, lname: lname,contact: contact,email: email, password: password,cpassword: cpassword},
-            // success: function(data){
-            //     Swal.fire({
-            //     'title': 'Successfully Submitted!',
-            //     'text': 'Successfully registered.'
-            //     'icon': 'success',
-            //     'confirmButtonText': 'Ok',
-            //     'type': 'success'
-            //   })
-            // },
-            // error: function(data){
-            //     Swal.fire({
-            //     'title': 'Error has Occurred',
-            //     'icon': 'error',
-            //     'confirmButtonText': 'Ok',
-            //     'type': 'error'
-            //   })
-            // }
-//         });
-//     }else{
-
-//     }
-    
-//      });
-// });
-
-// </script> -->
+  
 </body>
 
 </html>
