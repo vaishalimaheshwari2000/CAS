@@ -79,7 +79,14 @@ tr:nth-child(even) {
         width:70%;
         margin-left:6.5%;
     }
-   
+    #api, #api1{
+    border:none;
+    background-color: transparent;
+    color:black;
+}
+a{
+   color:black !important;
+}
 </style>
 <link rel="stylesheet" href="css/bootstrap.css">
     <script src="script.js"> </script>
@@ -108,7 +115,7 @@ tr:nth-child(even) {
 
 
 
-        
+
         <!-------------------------------------------------------- nav-bar-------------------------------------------------------- -->
         
        
