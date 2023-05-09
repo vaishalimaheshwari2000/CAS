@@ -1,33 +1,6 @@
 <?php include("connection.php"); ?>
 
-<?php
-     clearstatcache();
-     $login = false;
-     $showError = false;
-     if($_SERVER["REQUEST_METHOD"]=="POST"){
-        $email = $_POST['emailid'];
-        $password = $_POST['password'];
-        $stmt = $conn->prepare("select * from users where email=? and password=?");
 
-        $stmt->bind_param("ss",$email,$password);
-        $stmt->execute();
-        $stmt_result = $stmt->get_result();
-        if($stmt_result->num_rows > 0){
-            $data = $stmt_result->fetch_assoc();
-            echo "data:  " ;
-            echo implode($data);
-            if($data["password"] === $password) {
-                header("Location: home.html");
-           
-         }
-        
-            }
-        
-}
-
-   
-     
-?>
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -119,34 +92,7 @@ table{
 
 
 
-<?php
 
-if($login){
-    // echo" Data Inserted into db";
-    // echo"post";
-    // echo $
-    echo "<div class='alert alert-warning alert-dismissible fade show btn' role='alert'>
-    <strong>Login Successfully! </strong> 
-    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-    <span aria-hidden='true'>&times;</span>
-    </button>
-    </div>";
-    echo $display. "\n";
-    
-}
-if($showError){
-    // echo" Data Inserted into db";
-    // echo"post";
-    echo "<div class='alert alert-warning alert-dismissible fade show btn' role='alert'>
-    <strong>Error! </strong>".$showError."<br>
-    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-    <span aria-hidden='true'>&times;</span>
-        </button>
-    </div>";
-    // echo $display. "\n";
-    
-}
-?>
 
 <body>
 
@@ -190,7 +136,7 @@ if($showError){
     }
 </style>
 
-        <form  action="#" method="post" id='signUpForm'>
+        <form  action="authorloginSubmit.php" method="post" id='signUpForm'>
     <span ></span>
         <div class="mail">
 
@@ -215,7 +161,7 @@ if($showError){
         <!-- <a href="registration.php"> -->
     <!-- <form action="registration.php"> -->
 
-        <input type="submit" name="sign" value="Sign Up" formaction='registration.php' id="smt2">
+        <input type="submit" name="sign" value="Sign Up"  id="smt2">
     <!-- </form> -->
        
     </div>

@@ -49,7 +49,7 @@
                 </div>
                 <div class="panel-body">
                    
-                    <form action="#" class="form-group" method="post">
+                    <form action="registeruser.php" class="form-group" method="post">
 
                         <label for="#"> First Name</label>
                         <input type=" text" class="form-control" name="fname" id="firstname">
@@ -86,7 +86,7 @@
                         <div id='invalid'></div>
 
                         <div class="input_field">
-                            <input type="submit" value="Register" name="register" class="button"  formaction='home1.php'id="register">
+                            <input type="submit" value="Register" name="register" class="button" id="register">
                         </div>
 
 
@@ -100,46 +100,7 @@
             </div>
         </div>
     </div>
-    <?php
-                      $showAlert= false;
-                      if($_SERVER['REQUEST_METHOD']=='POST'){
-                         $firstname =    $_POST['fname'];
-                         $lastname = $_POST['lname'];
-                         $phoneno =  $_POST['phone'];
-                        $email =  $_POST['email'];
-                        $password =  $_POST['password'];
-                         $Cpassword = $_POST['cpwd'];
-                     
-                    
-                       
-                      if(($password==$Cpassword)){
-                            echo"Post";
-                            echo "<br>";
-                            $query = "INSERT INTO `users` (`fname`,`lname`,`contact`,`email`,`password`,`cpassword`) VALUES ('$firstname','$lastname','$phoneno','$email','$password', '$Cpassword')"; 
-                      
-                            echo $query;
-                            $data = mysqli_query($conn,$query);
-                            echo "<br>";
-                            
-                            echo $data;
-                       if($data)
-                         $showAlert = true;
-                       if($showAlert){
-                        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
-                              <strong> Successfully Submitted! </strong> 
-                              <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                              <span>&times;</span>
-                            </button>
-                        <div>";
-                         
-                       }  
-                     else {
-                        
-                      echo "failed".mysqli_error($conn); }
-
-                    } }
-                   
-?>
+   
 <script>
 
 document.querySelector('.input_field').addEventListener('click', (e)=>{

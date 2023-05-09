@@ -112,13 +112,13 @@ a{
                         <a class="nav-link" href="https://www.dei.ac.in/dei/files/IQAC/2022/CAS_GUIDELINES_2018.pdf">CAS
                             GUIDELINES<span class="sr-only">(current)</span></a>
                     </li>
-                    <!-- <li class="nav-item">
-                    <button class="nav-link" id='api' type="submit"><a href='output.php'>API Form</a></button>
-               
-                           </li>
                     <li class="nav-item">
+                    <button class="nav-link" id='api' type="submit"><a href='CASpartB22.php'>Part B</a></button>
+               
+                           </li> 
+                    <!-- <li class="nav-item">
                     <button class="nav-link" id='api1' type="submit"><a href='profile.php'>Profile Info</a></button>
-                </li> -->
+                </li>  -->
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
 
