@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAS Proforma Part A | II</title>
+    <title>CAS Proforma Part A </title>
     <style>
 
 table {
@@ -15,7 +15,9 @@ table {
   width: 100%;
 
 }
-
+.logOut{
+    margin:1rem;
+  }
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -122,9 +124,9 @@ a{
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
 
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Log
+                    <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit" formaction="authorlogin.php">Log
                         Out</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                    <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit"
                         formaction="home1.php">Back</button>
                 </form>
             </div>

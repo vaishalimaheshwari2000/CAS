@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAS Proforma Part B | II</title>
+    <title>CAS Proforma Part B | I & II</title>
     <style>
 
 table {
@@ -87,6 +87,9 @@ tr:nth-child(even) {
 a{
    color:black !important;
 }
+.logOut{
+    margin:1rem;
+  }
 </style>
 <link rel="stylesheet" href="css/bootstrap.css">
     <script src="script.js"> </script>
@@ -155,9 +158,9 @@ a{
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
 
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Log
+                    <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit" formaction="authorlogin.php">Log
                         Out</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                    <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit"
                         formaction="home1.php">Back</button>
                 </form>
             </div>

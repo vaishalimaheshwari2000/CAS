@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAS Proforma Part A | II</title>
+    <title>API Form</title>
     <style>
 
 table {
@@ -605,6 +605,25 @@ national and international journals</p>
         </tr>
         <?php }?>
     </table> 
+
+
+
+   <br><br> <p>  *Orientation/Refresher/Research Methodology course, development of e-contents and MOOCs, Workshop, Syllabus up-gradation workshop, Training Teaching-Learning Evaluation, Technology Programs and Faculty Development Programs</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
               <br><label for=""><b>EVEN semester</b></label>   
 
@@ -1200,6 +1219,92 @@ national and international journals</p>
         </tr>
         <?php }?>
     </table>
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ <br><br> <br><br>  <p> List of Enclosures: (Please attach, copies of certificates, sanction orders, papers etc. wherever
+necessary)</p>
+<ol>
+<li>Class Timetable</li>
+<li>Orientation course Certificate</li>
+<li>Duty list and notices</li>
+<li>Challenge ACI certificate</li>
+<li>Twinning workshop certificate</li>
+<li>Research paper</li>
+<li>Research fair 2019 prize certificate</li>
+<li>Paper presentation certificate (MDNCPDR 2018)</li>
+<li>Paper presentation certificate (NCIV 2020)</li>
+<li>Invitation for invited lecture</li>
+</ol>
+<!-- <p> Ishant Singhal<br>
+Assistant Professor<br>
+Department of Civil Engineering<br>
+Faculty of Engineering<br>
+Agra, 08th July 2022</p> -->
+<br><br><br>
+<p>Certified that the information submitted by Ishant Singhal is verified and I recommend his /
+her promotion to next level as he / she has completed all necessary requirements stipulated
+and being enforced as on today, by UGC.</p><br><br><br>
+<p id='hod'>Signatures of HoD with Stamp</p><br><br><br><br>
+<p>Verified and recommended for promotion to next level.</p><br><br><br>
+<p id='stamp'>Signatures of Dean with Stamp</p><br><br><br><br>
+<p>N.B.: The Dean and Head will assure that the information submitted by the faculty member
+is correct on the basis of evidences submitted and by signing above; they are verifying
+information and recommending the faculty member for promotion.</p>
+
+<style>
+    #hod,#stamp{
+        float:right;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="css/bootstrap.css">
     <title>Profile Form</title>
 </head>
 
@@ -63,13 +65,112 @@ tr:nth-child(even) {
 
     #head{
         text-align:center;
+        display:flex;
+        justify-content:center;
     }
+    #api, #api1{
+    border:none;
+    background-color: transparent;
+    color:black;
+}
+a{
+   color:black !important;
+}
 </style>
 <body>
     
+<div class="blockquote text-center">
+            <h3>Dayalbagh Educational Institute</h3>
+            <h4>(Deemed To Be University)</h4>
+            <h4>Dayalbagh, Agra</h4>
+            <h5>Assessment Criteria and Methodology Proforma for Promotion under CAS </h5>
+
+        </div>
 
 
-                                       <label><h2 id='head'>PROFILE PAGE</h2></label><br><b><hr></b>
+
+
+
+
+
+ <!-------------------------------------------------------- nav-bar-------------------------------------------------------- -->
+        
+       
+       
+       
+       
+ <hr style="border-top: 1mm solid black ;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-brand"> <img class="svg" src="logo.jpeg" alt="Bootstrap" width="40" height="40"
+                    loading="lazy"></a>
+            <a class="navbar-brand" href="https://www.dei.ac.in/dei/">DEI Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://admission.dei.ac.in:8085/cms_new/">DEI CMS<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.dei.ac.in/dei/files/IQAC/2022/CAS_GUIDELINES_2018.pdf">CAS
+                            GUIDELINES<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="profileQutput.php">Profile <span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                   
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+
+                    <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit" formaction="authorlogin.php">Log
+                        Out</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit"
+                        formaction="home1.php">Back</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+
+<style>
+  .logOut{
+    margin:1rem;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       <!-- <label><h2 id='head'>PROFILE PAGE</h2></label><br><b></b> -->
 <!-- <form method="post" id='full'> -->
  <br>
 

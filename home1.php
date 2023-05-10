@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Home</title>
 </head>
+<style>
+   .logOut{
+    margin:1rem;
+  }
+</style>
 <body>
     <div class="blockquote text-center">
         <h3>Dayalbagh Educational Institute</h3>
@@ -38,9 +43,9 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
          
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Log Out</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="authorlogin.php">Back</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="registration.php">Registration</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit" formaction="authorlogin.php">Log Out</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit" formaction="authorlogin.php">Back</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 logOut" type="submit" formaction="registration.php">Registration</button>
         </form>
       </div>
     </nav>
